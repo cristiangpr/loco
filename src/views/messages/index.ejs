@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+ <% include ../static/partials/head.ejs %>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <h1><a href="#hero">LCWS</a></h1>
+      </div>
+ <% include ../static/partials/navbar.ejs %>
+
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+
+
+  <main id="main">
+
+    <h1>Messages</h1>
+
+       <ul class="list-group">
+ <!-- #1 -->
+         <% messages.forEach((message) => { %>
+ <!-- #2 -->
+           <li class="list-group-item">
+             <a href="/messages/<%= message.id %>"> <%= message.name %> </a>
+           </li>
+         <% }) %>
+       </ul>
+
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+ <% include ../static/partials/basescripts.ejs %>
+
+</body>
+</html>
