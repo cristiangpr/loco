@@ -42,17 +42,7 @@ describe("routes : messages", () => {
        });
      });
 
-     describe("GET /messages/new", () => {
 
-  it("should render a new message form", (done) => {
-    request.get(`${base}new`, (err, res, body) => {
-      expect(err).toBeNull();
-      expect(body).toContain("Contact Us");
-      done();
-    });
-  });
-
-});
    });
 
    describe("POST /messages/create", () => {
