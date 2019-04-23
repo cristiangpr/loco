@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "loco website",
   "main": "src/server.js",
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "test": " set NODE_ENV=test&& jasmine",
     "start": "node src/server.js"
