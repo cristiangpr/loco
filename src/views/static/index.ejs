@@ -16,7 +16,7 @@
         <h1><a href="#hero">LCWS</a></h1>
       </div>
  <% include ./partials/navbar.ejs %>
-
+  <% include ./partials/messages.ejs %>
     </div>
   </header><!-- #header -->
 
@@ -33,7 +33,7 @@
 
   <main id="main">
 
-        <% include ./partials/messages.ejs %>
+
     <!--==========================
       About Us Section
     ============================-->
@@ -49,19 +49,19 @@
 
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa fa-line-chart"></i></div>
-              <h4 class="title"><a href="">Strategy and Planning</a></h4>
+              <h4 class="title">Strategy and Planning</h4>
               <p class="description">We start by analyzing your bussiness and identifying strengths and weaknessess.</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-building"></i></div>
-              <h4 class="title"><a href="">Flexible Architecture</a></h4>
+              <h4 class="title">Flexible Architecture</h4>
               <p class="description">Get the features you need to streamline your processess. Solutions that grow along with your bussiness</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fa fa-level-up"></i></div>
-              <h4 class="title"><a href="">Optimization</a></h4>
+              <h4 class="title">Optimization</h4>
               <p class="description">Ongoing maintenance and SEO ensure you stay in the mix</p>
             </div>
 
@@ -87,22 +87,22 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-              <h4 class="title"><a href="">Responsive Web Design and Develoment</a></h4>
+              <div class="icon"><i class="fa fa-desktop"></i></div>
+              <h4 class="title">Responsive Web Design and Develoment</h4>
               <p class="description">Great looking functional websites built with the latest technologies</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-mobile-phone"></i></a></div>
-              <h4 class="title"><a href="">Mobile App Development</a></h4>
+              <div class="icon"><i class="fa fa-mobile-phone"></i></div>
+              <h4 class="title">Mobile App Development</h4>
               <p class="description">Build an app for your bussiness or deploy it to an app store </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="box">
-              <div class="icon"><a href=""><i class="fa fa-dollar"></i></a></div>
-              <h4 class="title"><a href="">E-Commerce Platform Development</a></h4>
+              <div class="icon"><i class="fa fa-dollar"></i></div>
+              <h4 class="title">E-Commerce Platform Development</h4>
               <p class="description">Custom E-commerce stores for your product or service</p>
             </div>
           </div>
@@ -296,8 +296,7 @@
 
           <div class="col-lg-5 col-md-8">
             <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
+
               <form action="messages/create" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

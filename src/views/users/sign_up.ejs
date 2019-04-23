@@ -44,20 +44,33 @@
       <div id="logo" class="pull-left">
 
         <!-- Uncomment below if you prefer to use a text logo -->
-        <h1><a href="#hero">LCWS</a></h1>
+        <h1><a href="/#hero">LCWS</a></h1>
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
+          <li class="menu-active"><a href="/">Home</a></li>
+          <li><a href="/#about">About Us</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#portfolio">Portfolio</a></li>
+          <li><a href="/#team">Team</a></li>
 
-          <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#contact">Login</a></li>
+          <li><a href="/#contact">Contact Us</a></li>
+          <% if(currentUser) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/sign_out">Sign out</a>
+            <li><a href="/messages">Messages</a></li>
+          </li>
+        <% } else { %>
+        <!-- #2 -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="/users/sign_in">Sign in</a>
+          </li>
+        <% }%>
+
+
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
 
     </div>
   </header><!-- #header -->

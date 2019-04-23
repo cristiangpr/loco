@@ -26,8 +26,9 @@ module.exports = {
    };
    messageQueries.addMessage(newMessage, (err, message) => {
      if(err){
-       res.redirect(500, "/messages/new");
+       res.redirect(500, "#contact");
      } else {
+         req.flash("notice", "Your message has been sent");
        res.redirect(303, `/`);
      }
    });
