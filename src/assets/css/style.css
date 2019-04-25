@@ -61,10 +61,30 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 0.5s;
 }
 
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
+#wrapper.boxed {
+	margin: 0 auto;
+	background-color: #fff;
+
+}
+@media (max-width: 767px) {
+	#wrapper.boxed {
+		width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	#wrapper.boxed {
+		width: 810px;
+	}
+}
+@media (min-width: 992px) {
+	#wrapper.boxed {
+		width: 1030px;
+	}
+}
+@media (min-width: 1200px) {
+	#wrapper.boxed {
+		width: 1230px;
+	}
 }
 
 .back-to-top:focus {
