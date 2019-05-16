@@ -1038,10 +1038,10 @@ margin-right: auto;
 	-webkit-box-shadow:0 0 7px rgba(0,0,0,0.1);
 	box-shadow:0 0 7px rgba(0,0,0,0.1);
 	margin-top:20px;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out;
-	-o-transition:all .25s ease-in-out;
-	transition:all .25s ease-in-out;
+	-webkit-transition:all .9s ease-in-out;
+	-moz-transition:all .9s ease-in-out;
+	-o-transition:all .9s ease-in-out;
+	transition:all .9s ease-in-out;
 	position:relative;
 
 	border-radius: 4px;
